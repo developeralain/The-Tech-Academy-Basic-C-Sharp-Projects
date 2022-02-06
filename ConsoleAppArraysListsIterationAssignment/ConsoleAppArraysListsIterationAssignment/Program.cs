@@ -94,12 +94,12 @@ namespace ConsoleAppArraysListsIterationAssignment
             //    if (names[i] == userSearch)
             //    {
             //        Console.WriteLine(i);
-            //        break;
+            //        break;//breaks out of loop once query-match found
             //    }
-            //    else
+            //    if (names.Contains(userSearch) == false)
             //    {
             //        Console.WriteLine("Your query did not match any values in the list.");
-            //        break;
+            //        break;//breaks out if query doesn't match any existing list elements
             //    }
             //}
             //Console.Read();
@@ -118,13 +118,13 @@ namespace ConsoleAppArraysListsIterationAssignment
             //List<string> names = new List<string>() { "Billy", "Bobby", "Flobby", "Alain", "Alain", "Flobby" };
             //Console.WriteLine("Type text you'd like to search for in the list: ");
             //string query = Console.ReadLine();
-            //for (int i=0; i < names.Count; i++)
+            //for (int i = 0; i < names.Count; i++)
             //{
             //    if (names[i] == query)
             //    {
             //        Console.WriteLine(i);
             //    }
-            //    else
+            //    if (names.Contains(query) == false)
             //    {
             //        Console.WriteLine("Your query did not match any names in the list.");
             //        break;
@@ -140,31 +140,31 @@ namespace ConsoleAppArraysListsIterationAssignment
              string and whether or not it has already appeared in the list
             * Add comments to this code explaining it*/
 
-            List<string> names = new List<string>() { "Billy", "Bobby", "Flobby", "Alain", "Alain", "Flobby" };
-            //above is the list we will be iterating through
-            List<string> names2 = new List<string>();
-            //above is a blank list we will use to mirror the names list as we iterate through. It will be used to check
-            //if a string in names has already appeared or not during the iteration process.
-            foreach (string name in names)//iterates through names list, storing index value in name for each iteration
-            {
+            //List<string> names = new List<string>() { "Billy", "Bobby", "Flobby", "Alain", "Alain", "Flobby" };
+            ////above is the list we will be iterating through
+            //List<string> names2 = new List<string>();
+            ////above is a blank list we will use to mirror the names list as we iterate through. It will be used to check
+            ////if a string in names has already appeared or not during the iteration process.
+            //foreach (string name in names)//iterates through names list, storing index value in name for each iteration
+            //{
 
-                if (names2.Contains(name))/*if our blank list, that we are adding to for each iteration, already contains
-                                           the same string, then execute the below code*/
-                {
-                    Console.WriteLine("String " + name + " has already appeared in the list.");
-                    names2.Add(name);//adds element from name to our names2 list  
-                }
-                if (names2.Contains(name) == false)/*If our dynamic/growing names2 list doesn't yet have the string we 
-                                                    are at during the iteration, then execute below code.*/
-                {
-                    Console.WriteLine("String " + name + " hasn't appeared in the list yet.");
-                    names2.Add(name);//add this name to the growing names2 list
-                }
+            //    if (names2.Contains(name))/*if our blank list, that we are adding to for each iteration, already contains
+            //                               the same string, then execute the below code*/
+            //    {
+            //        Console.WriteLine("String " + name + " has already appeared in the list.");
+            //        names2.Add(name);//adds element from name to our names2 list  
+            //    }
+            //    if (names2.Contains(name) == false)/*If our dynamic/growing names2 list doesn't yet have the string we 
+            //                                        are at during the iteration, then execute below code.*/
+            //    {
+            //        Console.WriteLine("String " + name + " hasn't appeared in the list yet.");
+            //        names2.Add(name);//add this name to the growing names2 list
+            //    }
 
 
 
-            }
-            Console.Read();//keep console window open
+            //}
+            //Console.Read();//keep console window open
 
         }
 

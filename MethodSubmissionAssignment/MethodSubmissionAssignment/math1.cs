@@ -8,14 +8,15 @@ namespace MethodSubmissionAssignment
 {
     class math1
     {
-        public int AddNum(int x, int y = 985497685)//the default value is unlikely to be entered by a user, hence no input means y=985497685 which means else block runs and ignores y
+        public int AddNum(int x, string yString = null)//the default value is unlikely to be entered by a user, hence no input means y=985497685 which means else block runs and ignores y
         {
-            if (y != 985497685)//meaning if user enters any second value (i.e. y = any number other than its default value)
+            if (!string.IsNullOrEmpty(yString))//only executes if they DID enter a second number i.e. not true that yString is empty/null
             {
-                int sum = x + y;
+                int yInt = Convert.ToInt32(yString);
+                int sum = x + yInt;
                 return sum;
             }
-            else//so if y is its default value, ignore y and only compute with single user input x 
+            else//so if y is its default value, meaning null, ignore y and only compute with single user input x 
             {
                 int sum = x + 5;
                 return sum;

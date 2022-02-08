@@ -20,8 +20,8 @@ namespace MethodSubmissionAssignment
 
             if (!string.IsNullOrEmpty(yString))//checks to see if the user chose not to enter a second number: only executes if they DID enter a second number i.e. not true that yString is empty/null
             {
-                int y = Convert.ToInt32(yString);
-                int AddFive = new math1().AddNum(x, y);//calls method AddFive in object math1 and passes in userInt; method returns an int that is stored in AddFive variable
+                
+                int AddFive = new math1().AddNum(x, yString);//calls method AddFive in object math1 and passes in userInt; method returns an int that is stored in AddFive variable
                 Console.WriteLine("MATH RESULTS: " + AddFive);
                 Console.Read();
             }

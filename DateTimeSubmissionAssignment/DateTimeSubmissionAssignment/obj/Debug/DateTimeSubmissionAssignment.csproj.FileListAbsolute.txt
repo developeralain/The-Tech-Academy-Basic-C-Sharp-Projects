@@ -1,0 +1,7 @@
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\DateTimeSubmissionAssignment\DateTimeSubmissionAssignment\bin\Debug\DateTimeSubmissionAssignment.exe.config
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\DateTimeSubmissionAssignment\DateTimeSubmissionAssignment\bin\Debug\DateTimeSubmissionAssignment.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\DateTimeSubmissionAssignment\DateTimeSubmissionAssignment\bin\Debug\DateTimeSubmissionAssignment.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\DateTimeSubmissionAssignment\DateTimeSubmissionAssignment\obj\Debug\DateTimeSubmissionAssignment.csproj.AssemblyReference.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\DateTimeSubmissionAssignment\DateTimeSubmissionAssignment\obj\Debug\DateTimeSubmissionAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\DateTimeSubmissionAssignment\DateTimeSubmissionAssignment\obj\Debug\DateTimeSubmissionAssignment.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\DateTimeSubmissionAssignment\DateTimeSubmissionAssignment\obj\Debug\DateTimeSubmissionAssignment.pdb

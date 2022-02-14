@@ -1,0 +1,7 @@
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\ConstructorSubmissionAssignment\ConstructorSubmissionAssignment\bin\Debug\ConstructorSubmissionAssignment.exe.config
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\ConstructorSubmissionAssignment\ConstructorSubmissionAssignment\bin\Debug\ConstructorSubmissionAssignment.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\ConstructorSubmissionAssignment\ConstructorSubmissionAssignment\bin\Debug\ConstructorSubmissionAssignment.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\ConstructorSubmissionAssignment\ConstructorSubmissionAssignment\obj\Debug\ConstructorSubmissionAssignment.csproj.AssemblyReference.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\ConstructorSubmissionAssignment\ConstructorSubmissionAssignment\obj\Debug\ConstructorSubmissionAssignment.csproj.CoreCompileInputs.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\ConstructorSubmissionAssignment\ConstructorSubmissionAssignment\obj\Debug\ConstructorSubmissionAssignment.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\ConstructorSubmissionAssignment\ConstructorSubmissionAssignment\obj\Debug\ConstructorSubmissionAssignment.pdb

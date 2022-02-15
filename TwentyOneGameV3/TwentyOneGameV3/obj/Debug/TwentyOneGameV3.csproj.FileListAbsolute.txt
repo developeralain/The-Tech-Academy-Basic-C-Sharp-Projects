@@ -1,0 +1,10 @@
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\TwentyOneGameV3\bin\Debug\TwentyOneGameV3.exe.config
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\TwentyOneGameV3\bin\Debug\TwentyOneGameV3.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\TwentyOneGameV3\bin\Debug\TwentyOneGameV3.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\TwentyOneGameV3\obj\Debug\TwentyOneGameV3.csproj.AssemblyReference.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\TwentyOneGameV3\obj\Debug\TwentyOneGameV3.csproj.CoreCompileInputs.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\TwentyOneGameV3\obj\Debug\TwentyOneGameV3.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\TwentyOneGameV3\obj\Debug\TwentyOneGameV3.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\TwentyOneGameV3\bin\Debug\Casino.dll
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\TwentyOneGameV3\bin\Debug\Casino.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\TwentyOneGameV3\obj\Debug\TwentyOneGameV3.csproj.CopyComplete

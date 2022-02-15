@@ -1,0 +1,5 @@
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\Casino\obj\Debug\Casino.csproj.CoreCompileInputs.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\Casino\bin\Debug\Casino.dll
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\Casino\bin\Debug\Casino.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\Casino\obj\Debug\Casino.dll
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV3\Casino\obj\Debug\Casino.pdb

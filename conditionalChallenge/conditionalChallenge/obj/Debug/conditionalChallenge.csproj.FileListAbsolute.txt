@@ -1,0 +1,7 @@
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\conditionalChallenge\conditionalChallenge\bin\Debug\conditionalChallenge.exe.config
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\conditionalChallenge\conditionalChallenge\bin\Debug\conditionalChallenge.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\conditionalChallenge\conditionalChallenge\bin\Debug\conditionalChallenge.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\conditionalChallenge\conditionalChallenge\obj\Debug\conditionalChallenge.csproj.AssemblyReference.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\conditionalChallenge\conditionalChallenge\obj\Debug\conditionalChallenge.csproj.CoreCompileInputs.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\conditionalChallenge\conditionalChallenge\obj\Debug\conditionalChallenge.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\conditionalChallenge\conditionalChallenge\obj\Debug\conditionalChallenge.pdb

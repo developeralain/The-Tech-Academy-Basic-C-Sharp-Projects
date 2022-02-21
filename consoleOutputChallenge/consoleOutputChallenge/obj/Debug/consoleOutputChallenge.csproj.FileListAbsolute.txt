@@ -1,0 +1,6 @@
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\consoleOutputChallenge\consoleOutputChallenge\obj\Debug\consoleOutputChallenge.csproj.CoreCompileInputs.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\consoleOutputChallenge\consoleOutputChallenge\bin\Debug\consoleOutputChallenge.exe.config
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\consoleOutputChallenge\consoleOutputChallenge\bin\Debug\consoleOutputChallenge.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\consoleOutputChallenge\consoleOutputChallenge\bin\Debug\consoleOutputChallenge.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\consoleOutputChallenge\consoleOutputChallenge\obj\Debug\consoleOutputChallenge.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\consoleOutputChallenge\consoleOutputChallenge\obj\Debug\consoleOutputChallenge.pdb

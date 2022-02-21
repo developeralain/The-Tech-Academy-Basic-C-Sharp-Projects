@@ -1,0 +1,7 @@
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\loops\loops\bin\Debug\loops.exe.config
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\loops\loops\bin\Debug\loops.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\loops\loops\bin\Debug\loops.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\loops\loops\obj\Debug\loops.csproj.CoreCompileInputs.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\loops\loops\obj\Debug\loops.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\loops\loops\obj\Debug\loops.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\loops\loops\obj\Debug\loops.csproj.AssemblyReference.cache

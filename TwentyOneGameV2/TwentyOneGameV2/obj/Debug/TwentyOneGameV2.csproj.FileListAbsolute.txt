@@ -1,0 +1,7 @@
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV2\TwentyOneGameV2\obj\Debug\TwentyOneGameV2.csproj.AssemblyReference.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV2\TwentyOneGameV2\obj\Debug\TwentyOneGameV2.csproj.CoreCompileInputs.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV2\TwentyOneGameV2\bin\Debug\TwentyOneGameV2.exe.config
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV2\TwentyOneGameV2\bin\Debug\TwentyOneGameV2.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV2\TwentyOneGameV2\bin\Debug\TwentyOneGameV2.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV2\TwentyOneGameV2\obj\Debug\TwentyOneGameV2.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\TwentyOneGameV2\TwentyOneGameV2\obj\Debug\TwentyOneGameV2.pdb

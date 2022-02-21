@@ -20,6 +20,7 @@ namespace NewsletterAppMVC.Controllers
             return View();
         }
 
+        //Below function uses Entity Framework, which is a wrapper for ADO.NET
         //We used the Input element Name attributes, within our form, from Index.cshtml as parameters for this controller: 
         [HttpPost]
         public ActionResult SignUp(string firstName, string lastName, string socialSecurityNumber, string emailAddress)
@@ -30,79 +31,138 @@ namespace NewsletterAppMVC.Controllers
             }
             else
             {
-
-                string queryString = @"INSERT INTO SignUps (FirstName, LastName, EmailAddress, SocialSecurityNumber) VALUES
-                                        (@FirstName, @LastName, @EmailAddress, @SocialSecurityNumber)"; //you never want to pass user input directly into your query d/t SQL injection risk; these parameters (@FirstName, ... etc.) help prevent that
-
-
-                using (SqlConnection connection = new SqlConnection(connectionString))//anytime you open an outside connection, like to a dB, you want the using as it closes the connection when you're done to prevent memory leaks/slowdowns later 
+                using (NewsletterEntities db = new NewsletterEntities())
                 {
-                    SqlCommand command = new SqlCommand(queryString, connection);
-                    command.Parameters.Add("@FirstName", SqlDbType.VarChar);
-                    command.Parameters.Add("@LastName", SqlDbType.VarChar);
-                    command.Parameters.Add("@EmailAddress", SqlDbType.VarChar);
-                    command.Parameters.Add("@SocialSecurityNumber", SqlDbType.VarChar);
+                    //taking arguments that were passed in from the user via the form and mapped them to the properties of the signup object we've instantiated
+                    var signup = new SignUp();
+                    signup.FirstName = firstName;
+                    signup.LastName = lastName;
+                    signup.EmailAddress = emailAddress;
+                    signup.SocialSecurityNumber = socialSecurityNumber;
 
-
-                    command.Parameters["@FirstName"].Value = firstName;
-                    command.Parameters["@LastName"].Value = lastName;
-                    command.Parameters["@EmailAddress"].Value = emailAddress;
-                    command.Parameters["@SocialSecurityNumber"].Value = socialSecurityNumber;
-
-
-
-                    connection.Open();
-                    command.ExecuteNonQuery();
-                    connection.Close();
-
+                    //now we need to transfer this signup object's property values to our dB table 
+                    db.SignUps.Add(signup);
+                    db.SaveChanges();
                 }
                 return View("Success");
+
             }
 
         }
 
-        //we want to grab all signups from database and display them to admin user --> we'll use ADO.NET to accomplish this
+        //ADO.NET VERSION: BELOW CODE IS SAME AS ABOVE CODE EXCEPT IT USES ADO.NET INSTEAD OF ENTITY FRAMEWORK 
+        //We used the Input element Name attributes, within our form, from Index.cshtml as parameters for this controller: 
+        //[HttpPost]
+        //public ActionResult SignUp(string firstName, string lastName, string socialSecurityNumber, string emailAddress)
+        //{
+        //    if (string.IsNullOrEmpty(firstName) || string.IsNullOrEmpty(lastName) || string.IsNullOrEmpty(socialSecurityNumber) || string.IsNullOrEmpty(emailAddress))
+        //    {
+        //        return View("~/Views/Shared/Error.cshtml");//~ indicates a relative path starting from root; this returns error message page located in Shared folder
+        //    }
+        //    else
+        //    {
+
+        //        string queryString = @"INSERT INTO SignUps (FirstName, LastName, EmailAddress, SocialSecurityNumber) VALUES
+        //                                (@FirstName, @LastName, @EmailAddress, @SocialSecurityNumber)"; //you never want to pass user input directly into your query d/t SQL injection risk; these parameters (@FirstName, ... etc.) help prevent that
+
+
+        //        using (SqlConnection connection = new SqlConnection(connectionString))//anytime you open an outside connection, like to a dB, you want the using as it closes the connection when you're done to prevent memory leaks/slowdowns later 
+        //        {
+        //            SqlCommand command = new SqlCommand(queryString, connection);
+        //            command.Parameters.Add("@FirstName", SqlDbType.VarChar);
+        //            command.Parameters.Add("@LastName", SqlDbType.VarChar);
+        //            command.Parameters.Add("@EmailAddress", SqlDbType.VarChar);
+        //            command.Parameters.Add("@SocialSecurityNumber", SqlDbType.VarChar);
+
+
+        //            command.Parameters["@FirstName"].Value = firstName;
+        //            command.Parameters["@LastName"].Value = lastName;
+        //            command.Parameters["@EmailAddress"].Value = emailAddress;
+        //            command.Parameters["@SocialSecurityNumber"].Value = socialSecurityNumber;
+
+
+
+        //            connection.Open();
+        //            command.ExecuteNonQuery();
+        //            connection.Close();
+
+        //        }
+        //        return View("Success");
+        //    }
+
+        //}
+
+        //we want to grab all signups from database and display them to admin user --> we'll use Entity Framework to accomplish this
         public ActionResult Admin()
         {
-            string queryString = @"SELECT Id, FirstName, LastName, EmailAddress, SocialSecurityNumber from Signups";
-            List<NewsletterSignUp> signups = new List<NewsletterSignUp>();//we've instantiated an empty list of NewsletterSignUp Model objects (i.e. rows from table will be stored as objects in list)
-
-            using (SqlConnection connection = new SqlConnection(connectionString)) 
+            //we are instantiating newsletter entities class ... best practice to wrap instantiated entity objects in using statements 
+            using (NewsletterEntities db = new NewsletterEntities())//remember, this automatically passes in our connection string so we now have access to our database in one line!
             {
-                SqlCommand command = new SqlCommand(queryString, connection);
-
-                connection.Open();
-
-                SqlDataReader reader = command.ExecuteReader();
-
-                while (reader.Read())
+                var signups = db.SignUps;//db has a property called SignUps which represents all of our records in our database (it is a list object: list of database records as objects)
+                //so we will now use this NewsletterEntities db class object to access the database
+                var signupVms = new List<SignupVm>();//if obvious what datatype is you can use var to avoid redundancy
+                //we'll still use this logic in Entity, where we map our dB object to a view model so we don't pass private info to view
+                foreach (var signup in signups)
                 {
-                    var signup = new NewsletterSignUp();
-                    signup.Id = Convert.ToInt32(reader["Id"]);
-                    signup.FirstName = reader["FirstName"].ToString();
-                    signup.LastName = reader["LastName"].ToString();
-                    signup.EmailAddress = reader["EmailAddress"].ToString();
-                    signup.SocialSecurityNumber = reader["SocialSecurityNumber"].ToString();
-                    signups.Add(signup);//after reader has finished populating attributes of our signup object per the first table row contents, this object is added to our list of said objects
+                    var signupVm = new SignupVm();
+                    signupVm.FirstName = signup.FirstName;
+                    signupVm.LastName = signup.LastName;
+                    signupVm.EmailAddress = signup.EmailAddress;
+                    signupVms.Add(signupVm);
+
+
+
                 }
-            }
-
-            var signupVms = new List<SignupVm>();//if obvious what datatype is you can use var to avoid redundancy
-            foreach (var signup in signups)
-            {
-                var signupVm = new SignupVm();
-                signupVm.FirstName = signup.FirstName;
-                signupVm.LastName = signup.LastName;
-                signupVm.EmailAddress = signup.EmailAddress;
-                signupVms.Add(signupVm);
-
-
+                return View(signupVms);
 
             }
-            return View(signupVms);
+
         }
     }
 }
+//ADO.NET VERSION: Below code demonstrates the same above Admin() method, except using ADO.NET instead of Entity Framework (LOTS more code involved with ADO):
+//we want to grab all signups from database and display them to admin user --> we'll use ADO.NET to accomplish this
+//public ActionResult Admin()
+//{
+//    string queryString = @"SELECT Id, FirstName, LastName, EmailAddress, SocialSecurityNumber from Signups";
+//    List<NewsletterSignUp> signups = new List<NewsletterSignUp>();//we've instantiated an empty list of NewsletterSignUp Model objects (i.e. rows from table will be stored as objects in list)
+
+//    using (SqlConnection connection = new SqlConnection(connectionString))
+//    {
+//        SqlCommand command = new SqlCommand(queryString, connection);
+
+//        connection.Open();
+
+//        SqlDataReader reader = command.ExecuteReader();
+
+//        while (reader.Read())
+//        {
+//            var signup = new NewsletterSignUp();
+//            signup.Id = Convert.ToInt32(reader["Id"]);
+//            signup.FirstName = reader["FirstName"].ToString();
+//            signup.LastName = reader["LastName"].ToString();
+//            signup.EmailAddress = reader["EmailAddress"].ToString();
+//            signup.SocialSecurityNumber = reader["SocialSecurityNumber"].ToString();
+//            signups.Add(signup);//after reader has finished populating attributes of our signup object per the first table row contents, this object is added to our list of said objects
+//        }
+//    }
+
+//    var signupVms = new List<SignupVm>();//if obvious what datatype is you can use var to avoid redundancy
+//    foreach (var signup in signups)
+//    {
+//        var signupVm = new SignupVm();
+//        signupVm.FirstName = signup.FirstName;
+//        signupVm.LastName = signup.LastName;
+//        signupVm.EmailAddress = signup.EmailAddress;
+//        signupVms.Add(signupVm);
+
+
+
+//    }
+//    return View(signupVms);
+//}
+//    }
+//}
 
 //If you want to avoid an error with ActionResult methods and you haven't made any code yet, just do return null; 
 

@@ -25,7 +25,8 @@ namespace NewsletterAppMVC
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<SignUp> SignUps { get; set; }
+        public virtual DbSet<SignUp> SignUps { get; set; }//if you had multiple tables, not just SignUps, then each table would get its own property for this class
+        //you can see it is a DbSet which is a type of list of SignUp objects, each object being a record of this particular table
     }
 }
 //It's a partial class which is simply a class that can be added on to...not too important for our purposes but introduces the idea of having one class defined in separate CS files

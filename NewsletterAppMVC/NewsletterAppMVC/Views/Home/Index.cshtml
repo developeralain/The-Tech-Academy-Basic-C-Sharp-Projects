@@ -1,0 +1,39 @@
+﻿<div class="row no-gutters m-3">
+    <div class="card col-sm-12 col-md-10 col-lg-6 mx-auto shadow"><!--mx auto provides equal margin on both sides on x axis so it's centered'-->
+        <div class="card-header text-center">
+            <h5 class="m-0">Sign up to our newsletter</h5>
+        </div>
+        <div class="card-body">
+        @using (Html.BeginForm("SignUp", "Home", FormMethod.Post))
+        {
+            <div class="row no-gutters">
+                <div class="form-group col-md-12">
+                    <input name="FirstName" type="text" class="form-control" placeholder="First Name" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="LastName" type="text" class="form-control" placeholder="Last Name" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="SocialSecurityNumber" type="text" class="form-control" placeholder="Social Security Number" />
+                </div>
+                <div class="form-group col-md-12">
+                    <input name="EmailAddress" type="email" class="form-control" placeholder="Email Address" />
+                </div>
+                <button type="submit" class="btn btn-block btn-primary">Submit</button>
+            </div>
+        }
+        </div>
+    </div>
+</div>
+
+<!--
+
+* HTML.BEGINFORM
+    Called an HTML helper
+    It's a short tag that generates some HTML
+    It takes the controller endpoint that we wanna call when they submit this form: it'll be a sign up method inside of the Home Controller and we'll use Post method
+
+    JESSE VIDEO
+ * Create Controller endpoint / method for this form to submit information to ; and then on the controller (server) we can decide what we want to do with this information (typically store in dB)
+
+-->

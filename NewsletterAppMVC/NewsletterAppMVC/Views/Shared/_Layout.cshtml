@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    
+    <div class="container body-content">
+        @RenderBody()<!--Whatever view you are passing in from the controller, this is where it goes; this turns into the code form the View being passed-->
+
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)<!--allows import of a specific library for a specific view; located here as often other JS libraries depend on JQuery so must be ordered like so-->
+</body>
+</html>
+
+<!--
+What does bundling in general do? 
+    Bundling takes a bunch of files--css, javascript, etc--and packs them together in a 'bundle'
+    If there's a minified version--meaning all white space has been taken out--it uses that and saves a lot of space
+
+What does a _layout file contains?
+    Common elements for all pages of the application, including imported CSS and JavaScript libraries 
+
+What if you needed a library just for a single page for an application with many pages?
+    You wouldn't import it in this layout file as it means you're loading that script on every page, and that takes time and bandwidth and is wasteful
+    Theres a RenderSection tag, a razer syntax method, that allows you to render a script for a specific view 
+-->

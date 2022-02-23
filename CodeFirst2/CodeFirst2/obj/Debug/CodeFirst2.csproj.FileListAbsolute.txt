@@ -1,0 +1,12 @@
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\bin\Debug\CodeFirst2.exe.config
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\bin\Debug\CodeFirst2.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\bin\Debug\CodeFirst2.pdb
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\bin\Debug\EntityFramework.dll
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\bin\Debug\EntityFramework.xml
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\obj\Debug\CodeFirst2.csproj.AssemblyReference.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\obj\Debug\CodeFirst2.csproj.CoreCompileInputs.cache
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\obj\Debug\CodeFirst2.csproj.CopyComplete
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\obj\Debug\CodeFirst2.exe
+C:\Users\Alain\OneDrive\Desktop\Basic_C#_Programs\CodeFirst2\CodeFirst2\obj\Debug\CodeFirst2.pdb
